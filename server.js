@@ -4,10 +4,14 @@ const cors = require("cors");
 
 const app = express();
 
+// serve views files (react app) from express 
+const views_path = __dirname + '/app/views/';
+app.use(express.static(views_path));
+
+// allow cors from port 8081
 var corsOptions = {
   origin: "http://localhost:8081"
 };
-
 app.use(cors(corsOptions));
 
 // parse requests of content-type - application/json
@@ -29,6 +33,8 @@ db.sequelize.sync({ force: true }).then(() => {
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to azou web application for vertical saas!" });
 });
+
+require("./app/routes/medicine.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;

@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -29,7 +31,7 @@ db.sequelize.sync({ force: true }).then(() => {
     console.log("Drop and re-sync db.");
   });
 
-// simple route
+// register the routes
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to azou web application for vertical saas!" });
 });

@@ -6,13 +6,14 @@ const cors = require("cors");
 
 const app = express();
 
-// serve front-end static files from express
-const path = __dirname + "/app/views/static";
+// serve react front-end files
+const path = __dirname + "/app/views/public";
 app.use(express.static(path));
 
-// allow cors from port 8081
+// allow cors from port 8081 and 3000
 var corsOptions = {
   origin: "http://localhost:8081",
+  origin: "http://localhost:3000",
 };
 app.use(cors(corsOptions));
 

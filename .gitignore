@@ -5,6 +5,7 @@
 
 # dependencies
 /node_modules
+/app/views/node_modules
 /package-lock.json
 /yarn.lock
 

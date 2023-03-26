@@ -5,13 +5,8 @@
 
 # dependencies
 /node_modules
-/app/views/node_modules
 /package-lock.json
 /yarn.lock
-
-# production
-/app/views/dist
-/app/views/_builder
 
 # misc
 .DS_Store

@@ -1,26 +1,27 @@
-import React from 'react';
-import Routes from "../routes";
+import React from "react";
+import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Layout(props) {
-    return (
-      <div className="wrapper">
-        <Sidebar />
-        <Routes />
+  return (
+    <div className="wrapper">
+      <Sidebar />
 
-        <div className="main">
-          <Navbar />
+      <div className="main">
+        <Navbar />
 
-          <main className="content">
-            <div className="container-fluid p-0">
-              {/* PLACEHOLDER FOR DASHBOARD */}
-            </div>
-          </main>
+        <main className="content">
+          <div className="container-fluid p-0">
+            <Outlet />
+          </div>
+        </main>
 
-          <Footer />
-        </div>
+        <Footer />
       </div>
-    );
+    </div>
+  );
 }
-​
+
 export default Layout;

@@ -1,9 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
-
-import AddMedicine from "./add-medicine.component";
-import Medicine from "./medicine.component";
-import MedicinesList from "./medicine-list.component";
-import Medicines from "../pages/Medicines";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
@@ -28,6 +23,27 @@ function Sidebar() {
               <i class="align-middle" data-feather="user"></i>{" "}
               <span class="align-middle">Profile</span>
             </a>
+          </li>
+
+          <li class="sidebar-item">
+            <Link to={"/page-1"} class="sidebar-link">
+              <i class="align-middle" data-feather="user"></i>{" "}
+              <span class="align-middle">Page 1</span>
+            </Link>
+          </li>
+
+          <li class="sidebar-item">
+            <Link to={"/page-2"} class="sidebar-link">
+              <i class="align-middle" data-feather="user"></i>{" "}
+              <span class="align-middle">Page 2</span>
+            </Link>
+          </li>
+
+          <li class="sidebar-item">
+            <Link to={"/page-3"} class="sidebar-link">
+              <i class="align-middle" data-feather="user"></i>{" "}
+              <span class="align-middle">Page 3</span>
+            </Link>
           </li>
 
           <li class="sidebar-item">

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "../common/with-router";
 import MedicineDataService from "../services/medicine.service";
+import Med from "./Med";
 
 class Medicine extends Component {
   constructor(props) {
@@ -95,6 +96,10 @@ class Medicine extends Component {
   }
 
   render() {
+    return Med(this);
+  }
+
+  render2() {
     const { currentMedicine } = this.state;
 
     return (
@@ -149,7 +154,7 @@ class Medicine extends Component {
             )} */}
 
             <button
-              className="badge badge-danger mr-2"
+              className="btn btn-sm btn-danger mt-1"
               onClick={this.deleteMedicine}
             >
               Delete
@@ -157,7 +162,7 @@ class Medicine extends Component {
 
             <button
               type="submit"
-              className="badge badge-success"
+              className="btn btn-primary btn-sm"
               onClick={this.updateMedicine}
             >
               Update

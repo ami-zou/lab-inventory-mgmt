@@ -43,6 +43,8 @@ export default class AddMedicine extends Component {
       inventory_location: "counter",
       price: 0,
       low_stock: false,
+
+      submitted: false,
     };
   }
 
@@ -113,25 +115,27 @@ export default class AddMedicine extends Component {
       low_stock: this.state.low_stock,
     };
 
-    MedicineDataService.create(data).then((response) => {
-      this.setState({
-        id: response.data.id,
+    MedicineDataService.create(data)
+      .then((response) => {
+        this.setState({
+          id: response.data.id,
 
-        name: response.data.name,
-        description: response.data.description,
-        brand: response.data.brand,
-        quantity: response.data.quantity,
-        consumption_unit: response.data.consumption_unit,
-        inventory_type: response.data.inventory_type,
-        inventory_location: response.data.inventory_location,
-        price: response.data.price,
-        low_stock: response.data.low_stock,
+          name: response.data.name,
+          description: response.data.description,
+          brand: response.data.brand,
+          quantity: response.data.quantity,
+          consumption_unit: response.data.consumption_unit,
+          inventory_type: response.data.inventory_type,
+          inventory_location: response.data.inventory_location,
+          price: response.data.price,
+          low_stock: response.data.low_stock,
 
-        submitted: true,
-      }).catch((e) => {
-        console.log(e);
+          submitted: true,
+        });
+      })
+      .catch((err) => {
+        console.log(err.response.data);
       });
-    });
   }
 
   newMedicine() {

@@ -26,16 +26,16 @@ function Sidebar() {
           </li>
 
           <li class="sidebar-item">
-            <Link to={"/medicines"} class="sidebar-link">
-              <i class="align-middle" data-feather="package"></i>{" "}
-              <span class="align-middle">Medicines</span>
+            <Link to={"/add"} class="sidebar-link">
+              <i class="align-middle" data-feather="user"></i>{" "}
+              <span class="align-middle">Add Medicine</span>
             </Link>
           </li>
 
           <li class="sidebar-item">
-            <Link to={"/add"} class="sidebar-link">
-              <i class="align-middle" data-feather="user"></i>{" "}
-              <span class="align-middle">Add Medicine</span>
+            <Link to={"/medicines"} class="sidebar-link">
+              <i class="align-middle" data-feather="package"></i>{" "}
+              <span class="align-middle">Medicines</span>
             </Link>
           </li>
 

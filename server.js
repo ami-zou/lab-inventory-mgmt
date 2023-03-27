@@ -6,13 +6,15 @@ const cors = require("cors");
 
 const app = express();
 
-// serve react front-end files
+// serve production assets (react front-end files)
 const path = __dirname + "/app/views/build";
 app.use(express.static(path));
 
 // allow cors from front-end client port
 var corsOptions = {
   origin: process.env.REACT_APP_SERVER_HOST_URL + process.env.CLIENT_PORT,
+  origin: "http://localhost:3000",
+  credentials: true,
 };
 app.use(cors(corsOptions));
 

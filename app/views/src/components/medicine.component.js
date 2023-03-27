@@ -5,7 +5,7 @@ import MedicineDataService from "../services/medicine.service";
 class Medicine extends Component {
   constructor(props) {
     super(props);
-    this.onChangeTitle = this.onChangeTitle.bind(this);
+    this.onChangeName = this.onChangeName.bind(this);
     this.onChangeDescription = this.onChangeDescription.bind(this);
     this.getMedicine = this.getMedicine.bind(this);
     this.updateMedicine = this.updateMedicine.bind(this);

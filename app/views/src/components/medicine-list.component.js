@@ -1,10 +1,6 @@
 import MedicineDataService from "../services/medicine.service";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
-import Footer from "./Footer";
-import Dashboard from "../pages/Dashboard";
 
 export default class MedicineList extends Component {
   constructor(props) {
@@ -87,20 +83,6 @@ export default class MedicineList extends Component {
   }
 
   render() {
-    return (
-      <div>hello, page Medicines</div>
-
-      // <div className="wrapper">
-      //   <div className="main">
-      //     <main className="content">
-      //       <div className="container-fluid p-0"></div>
-      //     </main>
-      //   </div>
-      // </div>
-    );
-  }
-
-  render2() {
     const { searchName, medicines, currentMedicine, currentIndex } = this.state;
 
     return (

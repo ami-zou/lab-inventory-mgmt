@@ -26,23 +26,16 @@ function Sidebar() {
           </li>
 
           <li class="sidebar-item">
-            <Link to={"/page-1"} class="sidebar-link">
-              <i class="align-middle" data-feather="user"></i>{" "}
-              <span class="align-middle">Page 1</span>
+            <Link to={"/medicines"} class="sidebar-link">
+              <i class="align-middle" data-feather="package"></i>{" "}
+              <span class="align-middle">Medicines</span>
             </Link>
           </li>
 
           <li class="sidebar-item">
-            <Link to={"/page-2"} class="sidebar-link">
+            <Link to={"/add"} class="sidebar-link">
               <i class="align-middle" data-feather="user"></i>{" "}
-              <span class="align-middle">Page 2</span>
-            </Link>
-          </li>
-
-          <li class="sidebar-item">
-            <Link to={"/page-3"} class="sidebar-link">
-              <i class="align-middle" data-feather="user"></i>{" "}
-              <span class="align-middle">Page 3</span>
+              <span class="align-middle">Add Medicine</span>
             </Link>
           </li>
 
@@ -58,20 +51,6 @@ function Sidebar() {
               <i class="align-middle" data-feather="user-plus"></i>{" "}
               <span class="align-middle">Sign Up</span>
             </a>
-          </li>
-
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="pages-blank.html">
-              <i class="align-middle" data-feather="book"></i>{" "}
-              <span class="align-middle">Blank</span>
-            </a>
-          </li>
-
-          <li class="sidebar-item">
-            <Link to={"/medicines"} class="sidebar-link">
-              <i class="align-middle" data-feather="package"></i>{" "}
-              <span class="align-middle">Medicines</span>
-            </Link>
           </li>
 
           <li class="sidebar-header">Tools & Components</li>

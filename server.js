@@ -10,10 +10,9 @@ const app = express();
 const path = __dirname + "/app/views/build";
 app.use(express.static(path));
 
-// allow cors from port 8081 and 3000
+// allow cors from front-end client port
 var corsOptions = {
-  origin: "http://localhost:8081",
-  origin: "http://localhost:3000",
+  origin: process.env.REACT_APP_SERVER_HOST_URL + process.env.CLIENT_PORT,
 };
 app.use(cors(corsOptions));
 
@@ -34,7 +33,7 @@ db.sequelize.sync({ force: true }).then(() => {
 
 // serve the front-end files
 app.get("/", function (req, res) {
-  res.sendFile(path + "index.html");
+  res.sendFile(path + "/index.html");
 });
 
 require("./app/routes/medicine.routes")(app);

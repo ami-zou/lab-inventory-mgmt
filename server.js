@@ -7,7 +7,7 @@ const cors = require("cors");
 const app = express();
 
 // serve react front-end files
-const path = __dirname + "/app/views/public";
+const path = __dirname + "/app/views/build";
 app.use(express.static(path));
 
 // allow cors from port 8081 and 3000
@@ -32,12 +32,7 @@ db.sequelize.sync({ force: true }).then(() => {
   console.log("Drop and re-sync db.");
 });
 
-// register the routes
-// app.get("/", (req, res) => {
-//   res.json({ message: "Welcome to azou web application for vertical saas!" });
-// });
-
-// serve the front-end static files
+// serve the front-end files
 app.get("/", function (req, res) {
   res.sendFile(path + "index.html");
 });

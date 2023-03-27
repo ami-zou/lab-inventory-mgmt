@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import Page1 from "./pages/Page-1";
 import Page2 from "./pages/Page-2";
 import Page3 from "./pages/Page-3";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/Notfound";
 import Layout from "./components/Layout";
 
@@ -19,6 +20,7 @@ class App extends Component {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/medicines" element={<MedicinesList />} />
           <Route path="/add" element={<AddMedicine />} />
           <Route path="/medicines/:id" element={<Medicine />} />

@@ -19,10 +19,10 @@ function Sidebar() {
           </li>
 
           <li class="sidebar-item">
-            <a class="sidebar-link" href="pages-profile.html">
+            <Link to={"/profile"} class="sidebar-link">
               <i class="align-middle" data-feather="user"></i>{" "}
               <span class="align-middle">Profile</span>
-            </a>
+            </Link>
           </li>
 
           <li class="sidebar-item">

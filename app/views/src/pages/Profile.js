@@ -1,12 +1,6 @@
 function Profile() {
   return (
     <>
-      <div class="mb-3">
-        <h1 class="h3 d-inline align-middle">Profile</h1>
-        <a class="badge bg-dark text-white ms-2" href="upgrade-to-pro.html">
-          Get more page examples
-        </a>
-      </div>
       <div class="row">
         <div class="col-md-4 col-xl-3">
           <div class="card mb-3">
@@ -15,14 +9,14 @@ function Profile() {
             </div>
             <div class="card-body text-center">
               <img
-                src="img/avatars/avatar-4.jpg"
-                alt="Christina Mason"
+                src="img/avatars/avatar.jpg"
+                alt="Ami Zou"
                 class="img-fluid rounded-circle mb-2"
                 width="128"
                 height="128"
               />
-              <h5 class="card-title mb-0">Christina Mason</h5>
-              <div class="text-muted mb-2">Lead Developer</div>
+              <h5 class="card-title mb-0">Ami Zou</h5>
+              <div class="text-muted mb-2">Engineer</div>
 
               <div>
                 <a class="btn btn-primary btn-sm" href="#">
@@ -37,31 +31,19 @@ function Profile() {
             <div class="card-body">
               <h5 class="h6 card-title">Skills</h5>
               <a href="#" class="badge bg-primary me-1 my-1">
-                HTML
+                SaaS
               </a>
               <a href="#" class="badge bg-primary me-1 my-1">
-                JavaScript
+                Java
               </a>
               <a href="#" class="badge bg-primary me-1 my-1">
-                Sass
+                Python
               </a>
               <a href="#" class="badge bg-primary me-1 my-1">
-                Angular
-              </a>
-              <a href="#" class="badge bg-primary me-1 my-1">
-                Vue
+                SQL
               </a>
               <a href="#" class="badge bg-primary me-1 my-1">
                 React
-              </a>
-              <a href="#" class="badge bg-primary me-1 my-1">
-                Redux
-              </a>
-              <a href="#" class="badge bg-primary me-1 my-1">
-                UI
-              </a>
-              <a href="#" class="badge bg-primary me-1 my-1">
-                UX
               </a>
             </div>
             <hr class="my-0" />
@@ -75,11 +57,7 @@ function Profile() {
 
                 <li class="mb-1">
                   <span data-feather="briefcase" class="feather-sm me-1"></span>
-                  Works at <a href="#">GitHub</a>
-                </li>
-                <li class="mb-1">
-                  <span data-feather="map-pin" class="feather-sm me-1"></span>
-                  From <a href="#">Boston</a>
+                  Works at <a href="#">Ripple</a>
                 </li>
               </ul>
             </div>
@@ -88,7 +66,7 @@ function Profile() {
               <h5 class="h6 card-title">Elsewhere</h5>
               <ul class="list-unstyled mb-0">
                 <li class="mb-1">
-                  <a href="#">staciehall.co</a>
+                  <a href="#">LinkedIn</a>
                 </li>
                 <li class="mb-1">
                   <a href="#">Twitter</a>
@@ -98,9 +76,6 @@ function Profile() {
                 </li>
                 <li class="mb-1">
                   <a href="#">Instagram</a>
-                </li>
-                <li class="mb-1">
-                  <a href="#">LinkedIn</a>
                 </li>
               </ul>
             </div>
@@ -124,7 +99,7 @@ function Profile() {
                 <div class="flex-grow-1">
                   <small class="float-end text-navy">5m ago</small>
                   <strong>Vanessa Tucker</strong> started following
-                  <strong>Christina Mason</strong>
+                  <strong> Ami Zou</strong>
                   <br />
                   <small class="text-muted">Today 7:51 pm</small>
                   <br />
@@ -134,7 +109,7 @@ function Profile() {
               <hr />
               <div class="d-flex align-items-start">
                 <img
-                  src="img/avatars/avatar.jpg"
+                  src="img/avatars/avatar-4.jpg"
                   width="36"
                   height="36"
                   class="rounded-circle me-2"
@@ -142,8 +117,8 @@ function Profile() {
                 />
                 <div class="flex-grow-1">
                   <small class="float-end text-navy">30m ago</small>
-                  <strong>Ami Zou</strong> posted something on
-                  <strong>Christina Mason</strong>'s timeline
+                  <strong>Christina Morris</strong> posted something on
+                  <strong> Ami Zou</strong>'s timeline
                   <br />
                   <small class="text-muted">Today 7:21 pm</small>
                   <div class="border text-sm text-muted p-2 mt-1">
@@ -168,11 +143,11 @@ function Profile() {
                   width="36"
                   height="36"
                   class="rounded-circle me-2"
-                  alt="Christina Mason"
+                  alt="Ami Zou"
                 />
                 <div class="flex-grow-1">
                   <small class="float-end text-navy">1h ago</small>
-                  <strong>Christina Mason</strong> posted a new blog
+                  <strong>Ami Zou</strong> posted a new blog
                   <br />
                   <small class="text-muted">Today 6:35 pm</small>
                 </div>
@@ -190,7 +165,7 @@ function Profile() {
                 <div class="flex-grow-1">
                   <small class="float-end text-navy">3h ago</small>
                   <strong>William Harris</strong> posted two photos on
-                  <strong>Christina Mason</strong>'s timeline
+                  <strong> Ami Zou</strong>'s timeline
                   <br />
                   <small class="text-muted">Today 5:12 pm</small>
                   <div class="row g-0 mt-1">
@@ -228,7 +203,7 @@ function Profile() {
                 <div class="flex-grow-1">
                   <small class="float-end text-navy">1d ago</small>
                   <strong>William Harris</strong> started following
-                  <strong>Christina Mason</strong>
+                  <strong> Ami Zou</strong>
                   <br />
                   <small class="text-muted">Yesterday 3:12 pm</small>
                   <div class="d-flex align-items-start mt-1">
@@ -238,7 +213,7 @@ function Profile() {
                         width="36"
                         height="36"
                         class="rounded-circle me-2"
-                        alt="Christina Mason"
+                        alt="Ami Zou"
                       />
                     </a>
                     <div class="flex-grow-1">
@@ -258,11 +233,11 @@ function Profile() {
                   width="36"
                   height="36"
                   class="rounded-circle me-2"
-                  alt="Christina Mason"
+                  alt="Ami Zou"
                 />
                 <div class="flex-grow-1">
                   <small class="float-end text-navy">1d ago</small>
-                  <strong>Christina Mason</strong> posted a new blog
+                  <strong>Ami Zou</strong> posted a new blog
                   <br />
                   <small class="text-muted">Yesterday 2:43 pm</small>
                 </div>
@@ -271,7 +246,7 @@ function Profile() {
               <hr />
               <div class="d-flex align-items-start">
                 <img
-                  src="img/avatars/avatar.jpg"
+                  src="img/avatars/avatar-4.jpg"
                   width="36"
                   height="36"
                   class="rounded-circle me-2"
@@ -279,8 +254,8 @@ function Profile() {
                 />
                 <div class="flex-grow-1">
                   <small class="float-end text-navy">1d ago</small>
-                  <strong>Ami Zou</strong> started following
-                  <strong>Christina Mason</strong>
+                  <strong>Christina Morris</strong> started following
+                  <strong> Ami Zou</strong>
                   <br />
                   <small class="text-muted">Yesterdag 1:51 pm</small>
                 </div>

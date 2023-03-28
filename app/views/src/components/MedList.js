@@ -5,26 +5,6 @@ function MedList(props) {
 
   return (
     <div className="list row">
-      <div className="col-md-8">
-        <div className="input-group mb-3">
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Search by name"
-            value={searchName}
-            onChange={props.onChangeSearchName}
-          />
-          <div className="input-group-append">
-            <button
-              className="btn btn-outline-secondary"
-              type="button"
-              onClick={props.searchName}
-            >
-              Search
-            </button>
-          </div>
-        </div>
-      </div>
       <div className="col-md-6">
         <h4>Medicines List</h4>
 
@@ -56,6 +36,12 @@ function MedList(props) {
             <h4>Medicine</h4>
             <div>
               <label>
+                <strong>Id:</strong>
+              </label>{" "}
+              {currentMedicine.id}
+            </div>
+            <div>
+              <label>
                 <strong>Name:</strong>
               </label>{" "}
               {currentMedicine.name}
@@ -83,7 +69,7 @@ function MedList(props) {
         ) : (
           <div>
             <br />
-            <p>Please click on a Medicine...</p>
+            <p>Please click on a Medicine for details</p>
           </div>
         )}
       </div>

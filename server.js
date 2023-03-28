@@ -12,7 +12,11 @@ app.use(express.static(path));
 
 // allow cors from front-end client port
 var corsOptions = {
-  origin: ["http://localhost:3000", "https://lab-inventory-mgmt.onrender.com"],
+  origin: [
+    "http://localhost:3000",
+    "https://lab-inventory-mgmt.onrender.com",
+    "http://localhost:8080",
+  ],
   credentials: true,
 };
 app.use(cors(corsOptions));

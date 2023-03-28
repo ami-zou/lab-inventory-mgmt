@@ -71,7 +71,7 @@ function Med(props) {
       ) : (
         <div>
           <br />
-          <p>Please click on a Medicine...</p>
+          <p>Please click on a Medicine for details</p>
         </div>
       )}
     </div>

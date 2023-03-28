@@ -18,6 +18,8 @@ export default class MedicineList extends Component {
       currentIndex: -1,
       searchName: "",
     };
+
+    this.refreshList();
   }
 
   componentDidMount() {}

@@ -4,8 +4,9 @@ Inspired by https://creliohealth.com/lab-software/inventory-management/, hosted 
 
 Simple web app with an analytics dashboard that allows you to add, delete, and modify medicines.
 
-Sample Postman collection JSON file and demo are in the root dir
+Sample [Postman collection JSON file](https://github.com/ami-zou/lab-inventory-mgmt/blob/main/Medicines.postman_collection.json) and [demo](https://github.com/ami-zou/lab-inventory-mgmt/blob/main/Lab%20Mgmt%20Demo.mov).
 
+Screenshots:
 
 <img width="1512" alt="Screenshot 2023-03-27 at 10 02 12 PM" src="https://user-images.githubusercontent.com/15065020/228135088-b0229107-24ea-4715-9d0a-c4fd69b567f2.png">
 <img width="1512" alt="Screenshot 2023-03-27 at 10 02 18 PM" src="https://user-images.githubusercontent.com/15065020/228135095-286b99f2-470c-4d49-8b73-130afdb5b896.png">

@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "b7717957-ac89-47dc-b4d0-c451e936ddc0",
+		"name": "Medicines",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all medicines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/medicines",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"medicines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delate all medicines",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/medicines",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"medicines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a medicine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/medicines/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"medicines",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a medicine",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/medicines/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"medicines",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create medicine",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ibuprofen\",\n    \"description\": \"Help relieve mild to moderate pain.\",\n    \"brand\": \"Medi First\",\n    \"quantity\": 50,\n    \"consumption_unit\": \"bottle\",\n    \"inventory_type\": \"consummable\",\n    \"inventory_location\": \"counter\",\n    \"price\": 20,\n    \"low_stock\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/medicines",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"medicines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update medicine",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ibuprofen 1\",\n    \"description\": \"Help relieve mild to moderate pain.\",\n    \"brand\": \"Medi First\",\n    \"quantity\": 50,\n    \"consumption_unit\": \"bottle\",\n    \"inventory_type\": \"consummable\",\n    \"inventory_location\": \"counter\",\n    \"price\": 20,\n    \"low_stock\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/medicines/2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"medicines",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

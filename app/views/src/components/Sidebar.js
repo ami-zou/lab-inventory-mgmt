@@ -27,7 +27,7 @@ function Sidebar() {
 
           <li class="sidebar-item">
             <Link to={"/add"} class="sidebar-link">
-              <i class="align-middle" data-feather="user"></i>{" "}
+              <i class="align-middle" data-feather="square"></i>{" "}
               <span class="align-middle">Add Medicine</span>
             </Link>
           </li>
@@ -53,7 +53,7 @@ function Sidebar() {
             </a>
           </li>
 
-          <li class="sidebar-header">Tools & Components</li>
+          {/* <li class="sidebar-header">Tools & Components</li>
 
           <li class="sidebar-item">
             <a class="sidebar-link" href="ui-buttons.html">
@@ -104,7 +104,7 @@ function Sidebar() {
               <i class="align-middle" data-feather="map"></i>{" "}
               <span class="align-middle">Maps</span>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

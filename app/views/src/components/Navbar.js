@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand navbar-light navbar-bg">
@@ -211,14 +213,14 @@ function Navbar() {
               <span className="text-dark">Ami Zou</span>
             </a>
             <div className="dropdown-menu dropdown-menu-end">
-              <a className="dropdown-item" href="pages-profile.html">
+              <Link to={"/profile"} className="dropdown-item">
                 <i className="align-middle me-1" data-feather="user"></i>{" "}
                 Profile
-              </a>
-              <a className="dropdown-item" href="#">
+              </Link>
+              <Link to={"/"} className="dropdown-item">
                 <i className="align-middle me-1" data-feather="pie-chart"></i>{" "}
                 Analytics
-              </a>
+              </Link>
               <div className="dropdown-divider"></div>
               <a className="dropdown-item" href="index.html">
                 <i className="align-middle me-1" data-feather="settings"></i>{" "}
